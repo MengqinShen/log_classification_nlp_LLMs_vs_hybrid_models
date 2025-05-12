@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from datasets import Dataset
 
-df = pd.read_csv('/Users/mengqinshen/PycharmProjects/PythonProject/Log_Classification/training/dataset/synthetic_logs.csv')
+df = pd.read_csv('dataset/synthetic_logs.csv')
 df.target_label.unique()
 le = LabelEncoder()
 df["label_id"] = le.fit_transform(df["target_label"])
